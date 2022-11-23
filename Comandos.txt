@@ -1,0 +1,14 @@
+Crear Aplicación React:
+npx create-react-app nombreProyecto
+
+Instalar librerías (Bootstrap-Axios-SweetAlert)
+npm i bootstrap reactstrap axios sweetalert2
+
+Cors:
+services.AddCors();
+app.UseCors(options =>
+{
+    options.WithOrigins("http://localhost:3000");
+    options.AllowAnyMethod();
+    options.AllowAnyHeader();
+});
